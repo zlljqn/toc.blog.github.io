@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[HEXO+GITHUB+NexT搭建个人Blog]]></title>
       <url>%2F2017%2F01%2F27%2FHEXO-GITHUB-NexT%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BABlog%2F</url>
-      <content type="text"><![CDATA[前面随笔说了为什么我要搭建一个个人的Blog，这里也就不赘述了，反正撩起袖子就干活，想干一刻都等不了。 环境介绍操作系统：* MacOS v10.12.2 网络VPN：GreenVPN 软件：GIT v2.10.1Node.js v6.9.4Hexo v3.3.2 Hexo主题：NexT 资源介绍GitHub - 用于存放Blog站点文件和文章（https://github.com/）GoDaddy - 购买自己心仪的域名，管理域名DNS（https://sg.godaddy.com/zh/）极简图床 - 用于存放Blog中需要的图片（http://yotuku.cn/）]]></content>
+      <content type="text"><![CDATA[前面随笔说了为什么我要搭建一个个人的Blog，这里也就不赘述了，反正撩起袖子就干活，想干一刻都等不了。 环境介绍操作系统：* MacOS v10.12.2 网络VPN：GreenVPN 软件：GIT v2.10.1Node.js v6.9.4Hexo v3.3.2 Hexo主题：NexT 资源介绍GitHub - 用于存放Blog站点文件和文章（https://github.com/）GoDaddy - 购买自己心仪的域名，管理域名DNS（https://sg.godaddy.com/zh/）极简图床 - 用于存放Blog中需要的图片（http://yotuku.cn/） 搭建前准备 VPN翻墙 购买域名（可选） Blog搭建1. 安装Gita. 下载Git官网地址：https://git-scm.com/]]></content>
     </entry>
 
     
