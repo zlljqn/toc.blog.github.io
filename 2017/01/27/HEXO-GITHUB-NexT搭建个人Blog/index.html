@@ -84,31 +84,37 @@
 
 
 
-<meta name="description" content="前面随笔说了为什么我要搭建一个个人的Blog，这里也就不赘述了，反正撩起袖子就干活，想干一刻都等不了。
-环境介绍操作系统：* MacOS v10.12.2
-网络VPN：GreenVPN
-软件：GIT v2.10.1Node.js v6.9.4Hexo v3.3.2
-Hexo主题：NexT
-资源介绍GitHub - 用于存放Blog站点文件和文章（https://github.com/）GoDadd">
+<meta name="description" content="前面随笔说了为什么我要搭建一个个人的Blog，这里也就不赘述了，反正撩起袖子就干活，想干的事一刻都等不了，整个搭建大概用了5个小时，大坑没有，小坑还是有一些。
+注意：本文使用Hexo搭建Blog，Hexo是基于Node.js的静态博客，通俗的讲，静态的意思是需要在本地编辑文章的Mackdown页面，每次通过Node.js编译生成整个站点的静态内容，再发布到线上，是没有办法在线上直接编辑撰写博客的。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="HEXO+GITHUB+NexT搭建个人Blog">
+<meta property="og:title" content="HEXO+GITHUB+NexT搭建个人Blog （∂Mac）">
 <meta property="og:url" content="http://blog.tocstudio.net/2017/01/27/HEXO-GITHUB-NexT搭建个人Blog/index.html">
 <meta property="og:site_name" content="TOC">
-<meta property="og:description" content="前面随笔说了为什么我要搭建一个个人的Blog，这里也就不赘述了，反正撩起袖子就干活，想干一刻都等不了。
-环境介绍操作系统：* MacOS v10.12.2
-网络VPN：GreenVPN
-软件：GIT v2.10.1Node.js v6.9.4Hexo v3.3.2
-Hexo主题：NexT
-资源介绍GitHub - 用于存放Blog站点文件和文章（https://github.com/）GoDadd">
-<meta property="og:updated_time" content="2017-01-26T19:46:05.000Z">
+<meta property="og:description" content="前面随笔说了为什么我要搭建一个个人的Blog，这里也就不赘述了，反正撩起袖子就干活，想干的事一刻都等不了，整个搭建大概用了5个小时，大坑没有，小坑还是有一些。
+注意：本文使用Hexo搭建Blog，Hexo是基于Node.js的静态博客，通俗的讲，静态的意思是需要在本地编辑文章的Mackdown页面，每次通过Node.js编译生成整个站点的静态内容，再发布到线上，是没有办法在线上直接编辑撰写博客的。">
+<meta property="og:image" content="http://p1.bpimg.com/567571/d8c35cb1a7dc68e2.png">
+<meta property="og:image" content="http://p1.bqimg.com/567571/73c9c79d04a0741c.png">
+<meta property="og:image" content="http://p1.bqimg.com/567571/33eac0f08e729d6a.png">
+<meta property="og:image" content="http://i1.piimg.com/567571/4d452780b0bd69ef.png">
+<meta property="og:image" content="http://p1.bqimg.com/567571/87fcb760de488ab3.png">
+<meta property="og:image" content="http://p1.bqimg.com/567571/a6e9212aa26afd93.png">
+<meta property="og:image" content="http://i1.piimg.com/567571/9f1bb53ddeeb8187.png">
+<meta property="og:image" content="http://p1.bpimg.com/567571/65d2c6a17561c006.png">
+<meta property="og:image" content="http://p1.bqimg.com/567571/cc56035458179e36.png">
+<meta property="og:image" content="http://i1.piimg.com/567571/f48fdf274e9a4ee1.png">
+<meta property="og:image" content="http://p1.bqimg.com/567571/dcd1f4ac52486f1d.png">
+<meta property="og:image" content="http://p1.bqimg.com/567571/84e30fe2d5ec7c15.png">
+<meta property="og:image" content="http://p1.bqimg.com/567571/62ebb9a046a72617.png">
+<meta property="og:image" content="http://i1.piimg.com/567571/cba1c0b6e3d29290.png">
+<meta property="og:image" content="http://p1.bqimg.com/567571/c74c8117e137aeeb.png">
+<meta property="og:image" content="http://i1.piimg.com/567571/e0cf4ed5e02b67a2.png">
+<meta property="og:image" content="http://i1.piimg.com/567571/cbd937b4a4f422df.png">
+<meta property="og:updated_time" content="2017-01-27T09:54:43.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="HEXO+GITHUB+NexT搭建个人Blog">
-<meta name="twitter:description" content="前面随笔说了为什么我要搭建一个个人的Blog，这里也就不赘述了，反正撩起袖子就干活，想干一刻都等不了。
-环境介绍操作系统：* MacOS v10.12.2
-网络VPN：GreenVPN
-软件：GIT v2.10.1Node.js v6.9.4Hexo v3.3.2
-Hexo主题：NexT
-资源介绍GitHub - 用于存放Blog站点文件和文章（https://github.com/）GoDadd">
+<meta name="twitter:title" content="HEXO+GITHUB+NexT搭建个人Blog （∂Mac）">
+<meta name="twitter:description" content="前面随笔说了为什么我要搭建一个个人的Blog，这里也就不赘述了，反正撩起袖子就干活，想干的事一刻都等不了，整个搭建大概用了5个小时，大坑没有，小坑还是有一些。
+注意：本文使用Hexo搭建Blog，Hexo是基于Node.js的静态博客，通俗的讲，静态的意思是需要在本地编辑文章的Mackdown页面，每次通过Node.js编译生成整个站点的静态内容，再发布到线上，是没有办法在线上直接编辑撰写博客的。">
+<meta name="twitter:image" content="http://p1.bpimg.com/567571/d8c35cb1a7dc68e2.png">
 
 
 
@@ -142,7 +148,7 @@ Hexo主题：NexT
 
 
 
-  <title> HEXO+GITHUB+NexT搭建个人Blog | TOC </title>
+  <title> HEXO+GITHUB+NexT搭建个人Blog （∂Mac） | TOC </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -322,7 +328,7 @@ Hexo主题：NexT
             
             
               
-                HEXO+GITHUB+NexT搭建个人Blog
+                HEXO+GITHUB+NexT搭建个人Blog （∂Mac）
               
             
           </h1>
@@ -405,19 +411,31 @@ Hexo主题：NexT
       
 
       
-        <p>前面随笔说了为什么我要搭建一个个人的Blog，这里也就不赘述了，反正撩起袖子就干活，想干一刻都等不了。</p>
+        <p>前面随笔说了为什么我要搭建一个个人的Blog，这里也就不赘述了，反正撩起袖子就干活，想干的事一刻都等不了，整个搭建大概用了5个小时，大坑没有，小坑还是有一些。</p>
+<p><em>注意：</em>本文使用Hexo搭建Blog，Hexo是基于Node.js的静态博客，通俗的讲，静态的意思是需要在本地编辑文章的Mackdown页面，每次通过Node.js编译生成整个站点的静态内容，再发布到线上，是没有办法在线上直接编辑撰写博客的。所以普通用户读到这里，如果觉得对自己Markdown水品和技术水平不那么自信的话，读到这里可以离场了。</p>
 <h1 id="环境介绍"><a href="#环境介绍" class="headerlink" title="环境介绍"></a>环境介绍</h1><p>操作系统：<br>* MacOS v10.12.2</p>
-<p>网络VPN：<br>GreenVPN</p>
-<p>软件：<br>GIT v2.10.1<br>Node.js v6.9.4<br>Hexo v3.3.2</p>
-<p>Hexo主题：<br>NexT</p>
-<h1 id="资源介绍"><a href="#资源介绍" class="headerlink" title="资源介绍"></a>资源介绍</h1><p>GitHub - 用于存放Blog站点文件和文章（<a href="https://github.com/" target="_blank" rel="external">https://github.com/</a>）<br>GoDaddy - 购买自己心仪的域名，管理域名DNS（<a href="https://sg.godaddy.com/zh/" target="_blank" rel="external">https://sg.godaddy.com/zh/</a>）<br>极简图床 - 用于存放Blog中需要的图片（<a href="http://yotuku.cn/#/" target="_blank" rel="external">http://yotuku.cn/</a>）</p>
+<p>网络VPN：<br>* GreenVPN - 很多站点功能都在国外，需要VPN翻墙，GreenVPN是在MAC上我用的顺手的。</p>
+<p>软件：<br>* GIT v2.10.1<br>* Node.js v6.9.4<br>* Hexo v3.3.2</p>
+<p>Hexo主题：<br>* NexT</p>
+<h1 id="资源介绍"><a href="#资源介绍" class="headerlink" title="资源介绍"></a>资源介绍</h1><p>* GitHub - 用于存放Blog站点文件和文章（<a href="https://github.com/" target="_blank" rel="external">https://github.com/</a>）<br>* GoDaddy - 购买自己心仪的域名，管理域名DNS（<a href="https://sg.godaddy.com/zh/" target="_blank" rel="external">https://sg.godaddy.com/zh/</a>）<br>*极简图床 - 用于存放Blog中需要的图片（<a href="http://yotuku.cn/#/" target="_blank" rel="external">http://yotuku.cn/</a>）</p>
 <h1 id="搭建前准备"><a href="#搭建前准备" class="headerlink" title="搭建前准备"></a>搭建前准备</h1><ol>
-<li><p>VPN翻墙</p>
-</li>
-<li><p>购买域名（可选）</p>
-</li>
+<li>VPN翻墙<br>虽然很多被墙的开源站点获软件可以用国内镜像替代，但是还是建议使用VPN翻墙，我用顺手的是GreenVPN；GreenVPN在百度上一搜，会出来好多站点，很多是山寨的，我用的是<a href="https://www.getgreenjsq.co/index.php" target="_blank" rel="external">https://www.getgreenjsq.co/index.php</a>，如下图：<br><img src="http://p1.bpimg.com/567571/d8c35cb1a7dc68e2.png" alt="" title="GreenVPN"><br>接下来安网站指引注册，购买，安装（这里不细讲了），完成后，会在系统的右上角显示一片叶子，点击叶子可以登录，打开和关闭VPN。<br><img src="http://p1.bqimg.com/567571/73c9c79d04a0741c.png" alt="" title="打开GreenVPN"><br>好了，你现在可以去试试能不能访问Google了。<br><img src="http://p1.bqimg.com/567571/33eac0f08e729d6a.png" alt="" title="可以访问Google了"></li>
+<li>购买域名（可选）<br>在GitHub上的Pages部署Blog的话，GitHub会给Pages一个默认的访问地址，但这个地址正常人一般会感觉非常拗口难记，类似于<a href="https://[username].github.io/[pagename].github.io/。另外自己的Blog应该要有自己的名字，我们可以购买自己心仪的域名来访问我们的Blog，比如我使用了[http://blog.tocstudio.net][5]作为我Blog的访问地址。" target="_blank" rel="external">https://[username].github.io/[pagename].github.io/。另外自己的Blog应该要有自己的名字，我们可以购买自己心仪的域名来访问我们的Blog，比如我使用了[http://blog.tocstudio.net][5]作为我Blog的访问地址。</a><br>域名购买推荐使用GoDaddy，活动多，价格不贵，管理方便。GoDaddy中文站点地址：<a href="https://sg.godaddy.com/zh" target="_blank" rel="external">https://sg.godaddy.com/zh</a>。通过搜索域名查找自己想要的域名是否还可以使用购买。后文步骤中再讲解域名如何使用。<br><img src="http://i1.piimg.com/567571/4d452780b0bd69ef.png" alt="" title="Daddy搜索购买自己的域名"><h1 id="Blog搭建"><a href="#Blog搭建" class="headerlink" title="Blog搭建"></a>Blog搭建</h1><h2 id="1-安装Git"><a href="#1-安装Git" class="headerlink" title="1. 安装Git"></a>1. 安装Git</h2><h3 id="a-下载"><a href="#a-下载" class="headerlink" title="a. 下载"></a>a. 下载</h3>Git官网地址：<a href="https://git-scm.com/" target="_blank" rel="external">https://git-scm.com/</a><br>下载最新的Git安装包，我用的版本是2.10.1：<br><img src="http://p1.bqimg.com/567571/87fcb760de488ab3.png" alt="" title="下载Git安装包"><h3 id="b-安装"><a href="#b-安装" class="headerlink" title="b. 安装"></a>b. 安装</h3>一路点“继续”、“安装”、“完成”就完成安装了，检查是否安装成功，可以打开Mac自带的“终端”输入以下命令检查是否安装成功，安装成功后，以下命令会Git的版本号。<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git --version</div><div class="line">node -v</div><div class="line">npm -v</div></pre></td></tr></table></figure>
+<img src="http://p1.bqimg.com/567571/a6e9212aa26afd93.png" alt="" title="Mac终端"><br><img src="http://i1.piimg.com/567571/9f1bb53ddeeb8187.png" alt="" title="检查Git是否安装成功"><h2 id="2-申请注册GitHub"><a href="#2-申请注册GitHub" class="headerlink" title="2. 申请注册GitHub"></a>2. 申请注册GitHub</h2></li>
 </ol>
-<h1 id="Blog搭建"><a href="#Blog搭建" class="headerlink" title="Blog搭建"></a>Blog搭建</h1><h2 id="1-安装Git"><a href="#1-安装Git" class="headerlink" title="1. 安装Git"></a>1. 安装Git</h2><h3 id="a-下载"><a href="#a-下载" class="headerlink" title="a. 下载"></a>a. 下载</h3><p>Git官网地址：<a href="https://git-scm.com/" target="_blank" rel="external">https://git-scm.com/</a></p>
+<ul>
+<li>点击-><a href="https://github.com/" target="_blank" rel="external">GitHub(https://github.com/)</a>进入GitHub官网注册账号<br><img src="http://p1.bpimg.com/567571/65d2c6a17561c006.png" alt="" title="注册GitHub"></li>
+<li>点击”New repository”，新建一个版本库，它用来存储Blog的源码、站点资源和你写的内容：<br><img src="http://p1.bqimg.com/567571/cc56035458179e36.png" alt="" title="创建Blog代码和内容库"></li>
+<li>输入Repository name，取一个喜欢的名字，比如Blog，GitHub将会把他作为默认生成的域名的一部分) 。<br><img src="http://i1.piimg.com/567571/f48fdf274e9a4ee1.png" alt="" title="创建Blog的版本库（Repository）"><br><img src="http://p1.bqimg.com/567571/dcd1f4ac52486f1d.png" alt="" title="创建成功"></li>
+<li>激活邮箱账号<br>进入设置，到Email选卡中激活邮箱<br><img src="http://p1.bqimg.com/567571/84e30fe2d5ec7c15.png" alt="" title="进入设置"><img src="http://p1.bqimg.com/567571/62ebb9a046a72617.png" alt="" title="验证激活邮箱"><br>到此GitHub帐号申请完成。<h2 id="3-初始化GitHub-Pages"><a href="#3-初始化GitHub-Pages" class="headerlink" title="3. 初始化GitHub Pages"></a>3. 初始化GitHub Pages</h2>GitHub Pages按官方介绍，他是从你的代码库中来帮你搭建你个人、组织或项目的内容页面。我们可以先用GitHub提供的Pages模板初始化一个Pages站点，后面再用Hexo来替换。</li>
+<li>进入前面创建的版本库（Repository），点击设置选卡，进入选项页。<br><img src="http://i1.piimg.com/567571/cba1c0b6e3d29290.png" alt="" title="版本库选项页"></li>
+<li>下拉到GitHub Pages选项卡，点击“Choose a theme”按钮，选择一个GitHub标准的Page主题模板。<br><img src="http://p1.bqimg.com/567571/c74c8117e137aeeb.png" alt="" title="选择GitHub Pages模板"><br><img src="http://i1.piimg.com/567571/e0cf4ed5e02b67a2.png" alt="" title="挑一个模板"></li>
+<li>选择完成后，GitHub会把模板基础代码初始化到你的代码库主干上，并且为你生成默认的页面访问地址：<br><img src="http://i1.piimg.com/567571/cbd937b4a4f422df.png" alt="" title="完成GitHub Pages创建"><h2 id="4-安装Hexo"><a href="#4-安装Hexo" class="headerlink" title="4. 安装Hexo"></a>4. 安装Hexo</h2>Hexo是基于Node.js的静态博客，通俗的讲，静态的意思是需要在本地编辑文章的Mackdown页面，每次通过Node.js编译生成整个站点的静态内容，再发布到线上。</li>
+<li>打开Finder，创建一个存放Blog文件的目录，然后打开“终端”，进入到刚刚创建的目录中。（我个人是在终端下切换到Root账号，然后在根目录下创建了自己的Blog文件夹，如何打开Root用户可自行Baidu）</li>
+<li>在终端输入以下命令，安装Hexo<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div></pre></td></tr></table></figure>
+安装完成后用以下命令检查安装是否成功<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo -v</div></pre></td></tr></table></figure>
+</li>
+</ul>
 
       
     </div>
@@ -515,7 +533,7 @@ Hexo主题：NexT
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2017/01/27/HEXO-GITHUB-NexT搭建个人Blog/"
-           data-title="HEXO+GITHUB+NexT搭建个人Blog" data-url="http://blog.tocstudio.net/2017/01/27/HEXO-GITHUB-NexT搭建个人Blog/">
+           data-title="HEXO+GITHUB+NexT搭建个人Blog （∂Mac）" data-url="http://blog.tocstudio.net/2017/01/27/HEXO-GITHUB-NexT搭建个人Blog/">
       </div>
     
   </div>
@@ -626,7 +644,7 @@ Hexo主题：NexT
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#环境介绍"><span class="nav-number">1.</span> <span class="nav-text">环境介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#资源介绍"><span class="nav-number">2.</span> <span class="nav-text">资源介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#搭建前准备"><span class="nav-number">3.</span> <span class="nav-text">搭建前准备</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Blog搭建"><span class="nav-number">4.</span> <span class="nav-text">Blog搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-安装Git"><span class="nav-number">4.1.</span> <span class="nav-text">1. 安装Git</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-下载"><span class="nav-number">4.1.1.</span> <span class="nav-text">a. 下载</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#环境介绍"><span class="nav-number">1.</span> <span class="nav-text">环境介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#资源介绍"><span class="nav-number">2.</span> <span class="nav-text">资源介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#搭建前准备"><span class="nav-number">3.</span> <span class="nav-text">搭建前准备</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Blog搭建"><span class="nav-number">4.</span> <span class="nav-text">Blog搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-安装Git"><span class="nav-number">4.1.</span> <span class="nav-text">1. 安装Git</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-下载"><span class="nav-number">4.1.1.</span> <span class="nav-text">a. 下载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-安装"><span class="nav-number">4.1.2.</span> <span class="nav-text">b. 安装</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-申请注册GitHub"><span class="nav-number">4.2.</span> <span class="nav-text">2. 申请注册GitHub</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-初始化GitHub-Pages"><span class="nav-number">4.3.</span> <span class="nav-text">3. 初始化GitHub Pages</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-安装Hexo"><span class="nav-number">4.4.</span> <span class="nav-text">4. 安装Hexo</span></a></li></ol></li></ol></div>
             
 
           </div>
